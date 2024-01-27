@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Modal from '@/components/utils/modal'
-import HeroImage from '@/public/images/hero-image-01.jpg'
+import HeroImage from '@/public/images/hero-image-01.png'
 
 export default function Hero() {
 
