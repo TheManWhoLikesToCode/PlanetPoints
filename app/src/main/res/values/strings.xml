@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Planet Points</string>
+    <string name="welcome">Welcome to Planet Points</string>
+    <string name="scan_product_button">Scan Product</string>
+</resources>
