@@ -1,7 +1,9 @@
 # Welcome to PlanetPoints!
 
 
-<a href="url"><img src ="www.github.com/TheManWhoLikesToCode/PlanetPoints/Logo.png" align="Center" height="100" width="100"></a>
+
+<img src="https://github.com/TheManWhoLikesToCode/PlanetPoints/blob/product-page/Logo.png" alt="PlanetPoints Logo" height="100" width="100">
+
 
 ## **Summary**
 
