@@ -1,5 +1,6 @@
 package com.example.planetpoints
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -11,7 +12,7 @@ class BarCode : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bar_code)
-        val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
+        /*val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
 
         codeScanner = CodeScanner(this, scannerView)
 
@@ -26,6 +27,9 @@ class BarCode : AppCompatActivity() {
 
         // Callbacks
         codeScanner.decodeCallback = DecodeCallback {
+            val intent = Intent(this, ProductInformation::class.java)
+            intent.putExtra("code", it.text)
+            startActivity(intent)
             runOnUiThread {
                 Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
             }
@@ -39,7 +43,7 @@ class BarCode : AppCompatActivity() {
 
         scannerView.setOnClickListener {
             codeScanner.startPreview()
-        }
+        }*/
     }
 
     override fun onResume() {
