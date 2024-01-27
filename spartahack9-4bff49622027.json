@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "spartahack9",
+  "private_key_id": "4bff49622027c881b92e32a8ce6aeae34f145def",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC71mpkqw5D5a0l\nzOeMyhkn40NxnXTuahfZHGONbG/HvFjQliQKiViP2jd0jp/OpBC0aI4MLAFv6EXI\nUDr3ly+FqsY20YkmTg7x/C8plfYI+ifB2pRG36+XSR6djkA2VHGQm4EsCiuAXh6X\n5oCPFtLtC5dpbQu6pqGSQmGYQCB3Ty5EGs0Nz426IHMGfkBgzb7Hju6H6Mp7SJVp\nHilKZMErFCtKkjTLTkBPSkO/YFIQrSbWla4QpjUWIxpvHZPb2YDk7zBnIjRm8Qfc\nSwApUjKqJ7dmLIOt1DNOqFtEBNz2CdhkJqyr8UK/QAjlgv0vayLAZVuKynR96GuK\ny5cpEVffAgMBAAECggEABQcuZ7QMGJvJAKZVaARJTxmH+fF/XbOf7TMtPdRljs2t\nlovMupSs0IQq9tpFUD7Xczs9p8X0leSV6NCvYc0XIkQmtFuNVcxCHY6+fnKVGIfS\nhGxpV32JkddAINlb26umZi4OptMKd6mztovR7I9ti8qpip9qI6luBGAot6G3AyqJ\nVSvlQhiBcXYedN+uxSfivxG4u7eEb+KcCfXIcdnaVJnHl/kqggvHopM0pNNAVgiW\nosec/h7ygCWVXf2KOLGWb/ZlDP9EsogL5h8VjjePjTNXtMssY66gsfMODdu8u8CU\nFDZzFE6fnlXRkOmkzODetEPTBTLQuYqly3D1d4S0XQKBgQDzvzKrCjqraTzRaegx\nQTJZeyURvNHmSTySwdtVbNR1CTIBU5Zckgttq2A3zJ68n6xgN/2IVmnKAsrwnkjh\njtiqsKaDXE+SZvvIDBzu/4Kw9QqEbVWCZqfadWlCsDQFYFV5bXplbvZWQ2z89Wcz\nlitzIvjG+F3rnuWP2ZyqGXDjowKBgQDFR7ckCyzRVbmSjZRB/PDwGKwkaKO7fvzN\nHfvzOGOaRL501Q/EM2HG12QzFNhxDKU2BmKYnGcVkCiAYjAWxEhlFrqdKqWOhMKJ\nABcdtn8et1U/rU+aBsXo1pkPQC+qsvnQKRnqHSNxqa8TTXxjrgw4VDkR+nq63z+p\nJQMwwo1elQKBgHhSFpHl78YzockCDZNayp7vMgJKgha6akNLnJjTqyDG1D9hYqT5\nltihM1L4GBemfnHU0bteZMRKkqEqkXF+kSfZIalQhRsQ6RL8H8A+suXlYDa0vfQr\n9onZUYeQ8W0B+8+AIl414zX7/K31+ea2J2ajici2S66G9m0HD9XLzzUfAoGBAMNz\nLqWeELQAq07fx6+syoQE3Z9gsD6VLB6Hg1NPXZa8XrjfUbR/d3KJePMGxv0Rmyiw\nIMSzx4lcflPbc2tK4bKNVytY0hclvpn+pehBIyYqWmIw8XlXFoJ9Ab1TSSZkFQ2/\nerYwUipNA3ArR352NBMmljgSob88aRTJ36RSS78VAoGADG10ClSqODgyllgGwMum\nosB5Byt+R6DJD3bC1ULX2Gx/k1hTDnh/mv43Y23fbC3/p6KDfoXjQs8g4FLgxFiL\nEaCXTUWihZ3U4xaLonX9zejgyaP/qUrLIBcXrKar3Bde7bkh7kkDETtXZDVdB4YF\nDSI8E0vtccb89EbYvq9H2U8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "spartahack@spartahack9.iam.gserviceaccount.com",
+  "client_id": "113895237489593831986",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spartahack%40spartahack9.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
