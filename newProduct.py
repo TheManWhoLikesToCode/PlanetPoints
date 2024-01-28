@@ -10,20 +10,24 @@ json_key_path = './spartahack9-aa720278c9f3.json'
 # Set the GOOGLE_APPLICATION_CREDENTIALS environment variable
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = json_key_path
 
+image_name = "test.png"
+
+
 bucket_name = "planetpoints"
-image_name = "oreo.png"
+
 
 def analyze_image_from_gcs(bucket_name, image_name):
     """
     Analyzes an image from Google Cloud Storage using the Google Cloud Vision API.
-
+    
     Args:
         bucket_name (str): The name of the Google Cloud Storage bucket.
-        image_name (str): The name of the image in the Google Cloud Storage bucket.
-
+        image_name (str): The name of the image in the specified bucket.
+    
     Returns:
-        object: The response from the Google Cloud Vision API for text detection.
+        str: Concatenated text extracted from the analyzed image.
     """
+
     # Set up Google Cloud Storage client
     storage_client = storage.Client()
 
@@ -62,28 +66,22 @@ def analyze_image_from_gcs(bucket_name, image_name):
             # Assuming the last fully uppercase word indicates the end of ingredients
             ingredients_started = False
 
+    return concatenated_text
 
-
-    # Return the most likely logo along with other results
-    return text_response, concatenated_text
-
-
-
-# Call the function
-text_response, concatenated_text = analyze_image_from_gcs(bucket_name, image_name)
+concatenated_text = analyze_image_from_gcs(bucket_name, image_name)
 
 
 def extract_ingredients(text):
     """
-    Extracts ingredients from the given text and returns a filtered list of ingredients. 
-
+    Extracts ingredients from the given text and returns the filtered ingredients as a JSON string.
+    
     Args:
-        text (str): The input text containing ingredient information.
-
+        text (str): The input text containing the ingredients.
+    
     Returns:
-        list: A list of filtered ingredients.
+        str: A JSON string containing the filtered ingredients.
     """
-   
+
     # Parse ingredients
     parsed_result = parse_ingredient(text)
 
@@ -96,15 +94,37 @@ def extract_ingredients(text):
     # Change to array and filter noningredients
     ingredients_array = [ingredient.strip() for ingredient in ingredients_separated]
     filtered_ingredients = [ingredient for ingredient in ingredients_array if (ingredient.isupper()) and len(ingredient) > 2]
-
-    # Remove "INGREDIENTS:" from the beginning of the concatenated text
-    filtered_ingredients = filtered_ingredients.replace("INGREDIENTS:", "", 1).strip()
-
+    filtered_ingredients[0] = filtered_ingredients[0].replace("INGREDIENTS : ", "")
+    
+    # To JSON
     filtered_ingredients_json = json.dumps(filtered_ingredients)
     
     return filtered_ingredients_json
 
-print(extract_ingredients(concatenated_text))
+filtered_ingredients_json = (extract_ingredients(concatenated_text))
 
 
-#Delete png after scan 
+#Delete after anaylsis
+def delete_image(bucket_name, image_name):
+    """
+    Deletes an image from Google Cloud Storage.
+
+    Args:
+        bucket_name (str): The name of the Google Cloud Storage bucket.
+        image_name (str): The name of the image in the Google Cloud Storage bucket.
+    """
+    # Set up Google Cloud Storage client
+    storage_client = storage.Client()
+
+    try:
+        # Access the bucket and the blob
+        storage_client = storage.Client()
+
+        bucket = storage_client.bucket(bucket_name)
+        blob = bucket.blob(image_name)
+        blob.delete()
+
+    except Exception as e :
+        print(f"The file {image_name} was not found in the bucket {bucket_name}.")
+
+delete_image(bucket_name, image_name)
