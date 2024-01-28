@@ -11,7 +11,7 @@ json_key_path = './spartahack9-aa720278c9f3.json'
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = json_key_path
 
 bucket_name = "planetpoints"
-image_name = "test.png"
+image_name = "oreo.png"
 
 def analyze_image_from_gcs(bucket_name, image_name):
     """
@@ -46,35 +46,33 @@ def analyze_image_from_gcs(bucket_name, image_name):
     text_response = vision_client.text_detection(image=image)
     texts = text_response.text_annotations
 
-    # Flag to start capturing words
-    start_capturing = False
-    captured_text = ""
+    concatenated_text = ""
+    ingredients_started = False
 
-    # Process the labels or perform further actions
     for text in texts:
-        description = text.description
+        line = text.description.strip()
+        
+        if line.startswith("INGREDIENTS"):
+            ingredients_started = True
+        
+        if ingredients_started == True:
+            concatenated_text += line + " "
+        
+        if not any(char.isupper() for char in line) and line.isalpha():
+            # Assuming the last fully uppercase word indicates the end of ingredients
+            ingredients_started = False
 
-        if "INGREDIENTS:" in description:
-            start_capturing = True
 
-        if start_capturing:
-            captured_text += description + " "
 
-        # Stop capturing if the last fuller uppercase word is found
-        if start_capturing and description.isupper() and len(description) > 2:
-            last_fuller_uppercase_word = description
     # Return the most likely logo along with other results
-    return text_response, last_fuller_uppercase_word, captured_text
+    return text_response, concatenated_text
+
+
 
 # Call the function
-text_response, last_fuller_uppercase_word, captured_text = analyze_image_from_gcs(bucket_name, image_name)
-
-# Print the captured text
-print(captured_text.strip())
-print("Last Fuller Uppercase Word:", last_fuller_uppercase_word)
+text_response, concatenated_text = analyze_image_from_gcs(bucket_name, image_name)
 
 
-'''
 def extract_ingredients(text):
     """
     Extracts ingredients from the given text and returns a filtered list of ingredients. 
@@ -99,12 +97,14 @@ def extract_ingredients(text):
     ingredients_array = [ingredient.strip() for ingredient in ingredients_separated]
     filtered_ingredients = [ingredient for ingredient in ingredients_array if (ingredient.isupper()) and len(ingredient) > 2]
 
+    # Remove "INGREDIENTS:" from the beginning of the concatenated text
+    filtered_ingredients = filtered_ingredients.replace("INGREDIENTS:", "", 1).strip()
 
     filtered_ingredients_json = json.dumps(filtered_ingredients)
     
     return filtered_ingredients_json
 
-print(extract_ingredients(filtered_ingredients))
-'''
+print(extract_ingredients(concatenated_text))
+
 
 #Delete png after scan 
