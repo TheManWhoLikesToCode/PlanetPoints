@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:paddingTop="64dp"
     android:paddingStart="16dp"
     android:paddingEnd="16dp"
     tools:context=".ProductInformation">
@@ -21,7 +22,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Product Name:"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="#EFEFEF"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
 
         <TextView
             android:id="@+id/product_name_text"
@@ -45,7 +52,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Brand Name:"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="#EFEFEF"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
 
         <TextView
             android:id="@+id/brand_name_text"
@@ -55,6 +68,7 @@
             android:gravity="end"
             android:text="loading..."
             android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -69,8 +83,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/bar_code"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:padding="16dp"
+            android:gravity="center"
+            android:background="#EFEFEF"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light" />
         <TextView
             android:id="@+id/bar_code_text"
             android:layout_width="match_parent"

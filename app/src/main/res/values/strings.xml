@@ -10,4 +10,6 @@
     <string name="brand">Brand</string>
     <string name="take_picture">Take Picture</string>
     <string name="add_ingredients">Add Ingredients</string>
+    <string name="logo">logo</string>
+    <string name="welcome_to_planetpoints">Welcome to PlanetPoints</string>
 </resources>
