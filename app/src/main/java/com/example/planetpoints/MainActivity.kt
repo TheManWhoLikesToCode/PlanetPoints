@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         // Set a click listener for the button
         button.setOnClickListener {
             // Create an Intent to launch the second activity
-            val intent = Intent(this, BarCode::class.java)
+            val intent = Intent(this, scan::class.java)
             startActivity(intent)
         }
     }

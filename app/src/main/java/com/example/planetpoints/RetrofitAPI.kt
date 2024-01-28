@@ -7,12 +7,12 @@ import retrofit2.http.GET
 import retrofit2.http.Query
 
 interface ProductAPI {
-    @GET("/getProduct")
+    @GET("/default/getProduct")
     fun getProduct(@Query("barcode") barcode: String): Call<Product>
 }
 
 object RetrofitHelper {
-    val baseUrl = "https://3347lhusyg.execute-api.us-east-2.amazonaws.com/default/"
+    val baseUrl = "https://3347lhusyg.execute-api.us-east-2.amazonaws.com/"
     fun getInstance(): Retrofit {
         return Retrofit.Builder().baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory.create())

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <uses-feature
@@ -19,11 +19,14 @@
         android:theme="@style/Theme.PlanetPoints"
         tools:targetApi="31">
         <activity
+            android:name=".scan"
+            android:exported="false" />
+        <activity
             android:name=".ProductInformation"
             android:exported="false" />
         <activity
             android:name=".BarCode"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

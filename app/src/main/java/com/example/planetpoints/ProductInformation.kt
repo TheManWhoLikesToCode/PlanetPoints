@@ -23,7 +23,7 @@ class ProductInformation : AppCompatActivity() {
 
         val productAPI = RetrofitHelper.getInstance().create(ProductAPI::class.java)
 
-        val call: Call<Product> = productAPI.getProduct(code!!)
+        val call: Call<Product> = productAPI.getProduct(code!!.toLong().toString())
 
         call.enqueue(object : Callback<Product?> {
             override fun onResponse(call: Call<Product?>, response: Response<Product?>) {
@@ -31,7 +31,9 @@ class ProductInformation : AppCompatActivity() {
                 if (response.isSuccessful && body != null){
                     productNameText.text = body.Item.name.S
                     brandNameText.text = body.Item.brand.S
+                    Toast.makeText(this@ProductInformation, "Got the data for " + body.Item.name.S, Toast.LENGTH_SHORT).show()
                 }
+
             }
 
             override fun onFailure(call: Call<Product?>, t: Throwable) {
