@@ -36,7 +36,18 @@ jobs:
           #
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
-
+          
+      - name: Restore cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            .next/cache
+          # Generate a new cache whenever packages or source files change.
+          key: npx --no-install-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            npx --no-install-nextjs-${{ hashFiles('**/package-lock.json'}}-
+            
       - name: Install dependencies
         working-directory: ./frontend
         run: |
