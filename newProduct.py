@@ -1,7 +1,6 @@
 import os
 from google.cloud import storage, vision_v1
-import re 
-from ingredient_parser import parse_multiple_ingredients, parse_ingredient
+from ingredient_parser import parse_ingredient
 import json
 
 # Set the path to your JSON key file
@@ -34,18 +33,16 @@ def analyze_image_from_gcs(bucket_name, image_name):
     # Set up Google Cloud Vision API client
     vision_client = vision_v1.ImageAnnotatorClient()
 
+
     # Download the image from Google Cloud Storage
     bucket = storage_client.bucket(bucket_name)
     blob = bucket.blob(image_name)
     image_content = blob.download_as_bytes()
+ 
 
     # Analyze the image using Google Cloud Vision API
     image = vision_v1.Image(content=image_content)
     
-    # Logo detection
-    logo_response = vision_client.logo_detection(image=image)
-    logos = logo_response.logo_annotations
-
     # Text detection
     text_response = vision_client.text_detection(image=image)
     texts = text_response.text_annotations
