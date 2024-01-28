@@ -10,7 +10,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
-              <img src="./images/Logo.png" width={60} height={60} alt="Logo" />
+              <img src="./images/Logo.png" width={60} height={60} padding-top={160} alt="Logo" />
             </Link>
           </div>
 
@@ -19,16 +19,10 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link
-                  href="/signin"
-                  className="font-medium text-purple-600 hover:text-gray-200 px-4 py-3 flex items-center transition duration-150 ease-in-out"
-                >
-                  Sign in
-                </Link>
               </li>
               <li>
-                <Link href="/signup" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
-                  Sign up
+                <Link href="https://github.com/TheManWhoLikesToCode/PlanetPoints" className="btn-sm text-white bg-purple-600 hover:bg-purple-700 ml-3">
+                  Link To The Repository
                 </Link>
               </li>
             </ul>
