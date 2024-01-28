@@ -1,6 +1,6 @@
 # Welcome to PlanetPoints! - Make every scan count for the Planet with PlanetPoints
 
-<img src="https://github.com/TheManWhoLikesToCode/PlanetPoints/blob/main/frontend/public/images/Logo.png" alt="PlanetPoints Logo" height="250" width="250">
+![Banner Logo](https://github.com/TheManWhoLikesToCode/PlanetPoints/blob/main/banner_logo.png)
 
 ## Summary
 
