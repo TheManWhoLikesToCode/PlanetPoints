@@ -43,7 +43,6 @@ data class SubmitProduct(
     var name: String,
     var brand: String,
     var packaging: ArrayList<String>,
-    var scoreModifier: String,
 )
 
 data class StatusCode(
