@@ -42,11 +42,9 @@ jobs:
         with:
           path: |
             .next/cache
-          # Generate a new cache whenever packages or source files change.
-          key: npx --no-install-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**.[jt]s') }}
-          # If source files changed but packages didn't, rebuild from a prior cache.
+          key: npx --no-install-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.[jt]s') }}
           restore-keys: |
-            npx --no-install-nextjs-${{ hashFiles('**/package-lock.json'}}-
+            npx --no-install-nextjs-${{ hashFiles('**/package-lock.json') }}-
             
       - name: Install dependencies
         working-directory: ./frontend
