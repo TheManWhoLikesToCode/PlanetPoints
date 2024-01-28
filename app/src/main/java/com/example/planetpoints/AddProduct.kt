@@ -1,7 +1,6 @@
 package com.example.planetpoints
 
 import android.content.Intent
-import android.R
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
