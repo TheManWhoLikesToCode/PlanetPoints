@@ -43,10 +43,10 @@ jobs:
           npm ci
 
       - name: Build with Next.js
+        working-directory: ./frontend
         run: |
           cd frontend
           npx --no-install next build
-          working-directory: ./frontend
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
