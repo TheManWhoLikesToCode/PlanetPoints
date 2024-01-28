@@ -37,7 +37,8 @@ class ProductInformation : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<Product?>, t: Throwable) {
-                Toast.makeText(this@ProductInformation, "Failed to get the data...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@ProductInformation, "Product not found.", Toast.LENGTH_SHORT).show()
+
             }
         })
     }
