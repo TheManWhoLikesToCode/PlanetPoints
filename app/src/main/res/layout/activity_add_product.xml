@@ -7,12 +7,53 @@
     tools:context=".AddProduct">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewProductName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:text="Product Name"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextProductName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductName"
+        app:layout_constraintStart_toStartOf="@+id/textViewProductName"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product Price"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProductName"
+        app:layout_constraintStart_toStartOf="@+id/editTextProductName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextProductPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice"
+        app:layout_constraintStart_toStartOf="@+id/textViewProductPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/buttonAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Product"
+        app:layout_constraintTop_toBottomOf="@+id/editTextProductPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
