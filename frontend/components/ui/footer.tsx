@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="mb-2">
                 {/* Logo */}
                 <Link href="/" className="block" aria-label="Cruip">
-                  <img src="/images/logo.png" width={60} height={60} alt="Logo" />
+                  <img src="./images/logo.png" width={60} height={60} alt="Logo" />
                 </Link>
               </div>
               <div className="text-gray-400">Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</div>

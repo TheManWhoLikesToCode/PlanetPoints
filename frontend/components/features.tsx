@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Brand_Environmental_Record_Icon_B from '@/public/images/Brand_Environemental_Record_Icon_B.png'
 import Eco_Friendly_Packaging_Icon_B from '@/public/images/Eco_Friendly_Packaging_Icon_B.png'
 import Product_Sustainability_Report_Icon_B from '@/public/images/Product_Sustainability_Report_Icon_B.png'
-import Brand_Environmental_Record_Icon_W from '@/public/images/Brand_Environemental_Record_Icon_W.png'
-import Eco_Friendly_Packaging_Icon_W from '@/public/images/Eco_Friendly_Packaging_Icon_W.png'
-import Product_Sustainability_Report_Icon_W from '@/public/images/Product_Sustainability_Report_Icon_W.png'
+import Brand_Environmental_Record_Icon_W from './public/images/Brand_Environemental_Record_Icon_W.png'
+import Eco_Friendly_Packaging_Icon_W from './public/images/Eco_Friendly_Packaging_Icon_W.png'
+import Product_Sustainability_Report_Icon_W from './public/images/Product_Sustainability_Report_Icon_W.png'
 
 export default function Features() {
   return (
