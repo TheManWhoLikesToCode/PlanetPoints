@@ -228,7 +228,7 @@ module.exports = require("next/dist/shared/lib/utils/warn-once.js");
 
 /***/ }),
 
-/***/ 698:
+/***/ 1384:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1011,29 +1011,18 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_re
 
 /***/ }),
 
-/***/ 3406:
+/***/ 0:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1040));
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4468, 23));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4187));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7369));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9201));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1040));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2845));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8567));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 846));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2845));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7267));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4187));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9201));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7369))
-
-/***/ }),
-
-/***/ 4529:
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7144, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 5110, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 7914, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 3682, 23));
-Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 1390, 23))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7267))
 
 /***/ }),
 
@@ -1090,7 +1079,7 @@ const { __esModule, $$typeof } = proxy;
 /* harmony default export */ const hero = (proxy.default);
 
 // EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(2208);
+var next_image = __webpack_require__(8379);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 ;// CONCATENATED MODULE: ./public/images/Brand_Environemental_Record_Icon_W.png
 /* harmony default export */ const Brand_Environemental_Record_Icon_W = ({"src":"/_next/static/media/Brand_Environemental_Record_Icon_W.316312dd.png","height":612,"width":612,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAY0lEQVR42iXDMQsBAQAG0O+kxEQM8hsUGSgldGaDK5LOcptBWf34lyu9XsTYwdDSsd2NlafGwlzl6xy1t1LE1sMldmoTUYjKLXpOZiJG5oqIgb2W0lqiI64aHy99ib+Nu6kofi1jSmuKXiMCAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
@@ -1722,7 +1711,7 @@ __webpack_require__.r(__webpack_exports__);
 var __webpack_require__ = require("../../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [67,93,87,921], () => (__webpack_exec__(698)));
+var __webpack_exports__ = __webpack_require__.X(0, [67,93,87,164], () => (__webpack_exec__(1384)));
 module.exports = __webpack_exports__;
 
 })();
