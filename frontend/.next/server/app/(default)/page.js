@@ -280,7 +280,7 @@ __webpack_require__.r(__webpack_exports__);
         '(default)',
         {
         children: ['__PAGE__', {}, {
-          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 4190)), "/Users/blackhat/Documents/GitHub/PlanetPoints/frontend/app/(default)/page.tsx"],
+          page: [() => Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7872)), "/Users/blackhat/Documents/GitHub/PlanetPoints/frontend/app/(default)/page.tsx"],
           
         }]
       },
@@ -416,7 +416,7 @@ function Footer() {
                                             className: "block",
                                             "aria-label": "Cruip",
                                             children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                                src: "/images/logo.png",
+                                                src: "./images/logo.png",
                                                 width: 60,
                                                 height: 60,
                                                 alt: "Logo"
@@ -984,7 +984,7 @@ function Hero() {
                                             controls: true,
                                             children: [
                                                 /*#__PURE__*/ jsx_runtime_.jsx("source", {
-                                                    src: "/videos/video.mp4",
+                                                    src: "./videos/video.mp4",
                                                     type: "video/mp4"
                                                 }),
                                                 "Your browser does not support the video tag."
@@ -1011,7 +1011,7 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_re
 
 /***/ }),
 
-/***/ 0:
+/***/ 9593:
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
 Promise.resolve(/* import() eager */).then(__webpack_require__.t.bind(__webpack_require__, 4468, 23));
@@ -1019,10 +1019,10 @@ Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_re
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7369));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 9201));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 1040));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 2845));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8567));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7267));
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7110));
 Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 846));
-Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 7267))
+Promise.resolve(/* import() eager */).then(__webpack_require__.bind(__webpack_require__, 8567))
 
 /***/ }),
 
@@ -1050,7 +1050,7 @@ const { __esModule, $$typeof } = proxy;
 
 /***/ }),
 
-/***/ 4190:
+/***/ 7872:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1081,8 +1081,8 @@ const { __esModule, $$typeof } = proxy;
 // EXTERNAL MODULE: ./node_modules/next/image.js
 var next_image = __webpack_require__(8379);
 var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
-;// CONCATENATED MODULE: ./public/images/Brand_Environemental_Record_Icon_W.png
-/* harmony default export */ const Brand_Environemental_Record_Icon_W = ({"src":"/_next/static/media/Brand_Environemental_Record_Icon_W.316312dd.png","height":612,"width":612,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAY0lEQVR42iXDMQsBAQAG0O+kxEQM8hsUGSgldGaDK5LOcptBWf34lyu9XsTYwdDSsd2NlafGwlzl6xy1t1LE1sMldmoTUYjKLXpOZiJG5oqIgb2W0lqiI64aHy99ib+Nu6kofi1jSmuKXiMCAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+;// CONCATENATED MODULE: ./public/images/Brand_Environmental_Record_Icon_W.png
+/* harmony default export */ const Brand_Environmental_Record_Icon_W = ({"src":"/_next/static/media/Brand_Environmental_Record_Icon_W.316312dd.png","height":612,"width":612,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAY0lEQVR42iXDMQsBAQAG0O+kxEQM8hsUGSgldGaDK5LOcptBWf34lyu9XsTYwdDSsd2NlafGwlzl6xy1t1LE1sMldmoTUYjKLXpOZiJG5oqIgb2W0lqiI64aHy99ib+Nu6kofi1jSmuKXiMCAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./public/images/Eco_Friendly_Packaging_Icon_W.png
 /* harmony default export */ const Eco_Friendly_Packaging_Icon_W = ({"src":"/_next/static/media/Eco_Friendly_Packaging_Icon_W.2f73cbdf.png","height":612,"width":612,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAcUlEQVR42g2LsQqCABiEb2oqnMqoiIQiq6HCIVIcdNBFBCc3R8EH8bU/vP/n7jsOTgQcCDmytctHTk/CxEhKzUpEfF1kDMTmRdwd/hRUlNzYy/bkbbVOGaGI/QE1H0782MloXKyZSYg4C/Hw5EpnvtgsduNJouEOwOEAAAAASUVORK5CYII=","blurWidth":8,"blurHeight":8});
 ;// CONCATENATED MODULE: ./public/images/Product_Sustainability_Report_Icon_W.png
@@ -1145,7 +1145,7 @@ function Features() {
                                 children: [
                                     /*#__PURE__*/ jsx_runtime.jsx((image_default()), {
                                         className: "w-16 h-16 mb-4",
-                                        src: Brand_Environemental_Record_Icon_W,
+                                        src: Brand_Environmental_Record_Icon_W,
                                         alt: "Public Transport Icon"
                                     }),
                                     /*#__PURE__*/ jsx_runtime.jsx("h4", {
@@ -1620,7 +1620,7 @@ function Home() {
 
 /***/ }),
 
-/***/ 2845:
+/***/ 7110:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1628,7 +1628,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Brand_Environemental_Record_Icon_W.316312dd.png","height":612,"width":612,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAY0lEQVR42iXDMQsBAQAG0O+kxEQM8hsUGSgldGaDK5LOcptBWf34lyu9XsTYwdDSsd2NlafGwlzl6xy1t1LE1sMldmoTUYjKLXpOZiJG5oqIgb2W0lqiI64aHy99ib+Nu6kofi1jSmuKXiMCAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({"src":"/_next/static/media/Brand_Environmental_Record_Icon_W.316312dd.png","height":612,"width":612,"blurDataURL":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAQAAABuBnYAAAAAY0lEQVR42iXDMQsBAQAG0O+kxEQM8hsUGSgldGaDK5LOcptBWf34lyu9XsTYwdDSsd2NlafGwlzl6xy1t1LE1sMldmoTUYjKLXpOZiJG5oqIgb2W0lqiI64aHy99ib+Nu6kofi1jSmuKXiMCAAAAAElFTkSuQmCC","blurWidth":8,"blurHeight":8});
 
 /***/ }),
 

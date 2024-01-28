@@ -72,7 +72,7 @@ export default function Hero() {
             <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
               <div className="relative pb-9/16">
                 <video className="absolute w-full h-full" width="1920" height="1080" loop controls>
-                  <source src="/videos/video.mp4" type="video/mp4" />
+                  <source src="./videos/video.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

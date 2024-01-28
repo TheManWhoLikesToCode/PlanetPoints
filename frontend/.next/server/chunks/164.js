@@ -265,7 +265,7 @@ function Header() {
                             className: "block",
                             "aria-label": "Cruip",
                             children: /*#__PURE__*/ jsx_runtime.jsx("img", {
-                                src: "/images/logo.png",
+                                src: "./images/logo.png",
                                 width: 60,
                                 height: 60,
                                 alt: "Logo"
