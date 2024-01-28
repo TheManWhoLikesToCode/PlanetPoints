@@ -15,7 +15,7 @@ export default function Footer() {
               <div className="mb-2">
                 {/* Logo */}
                 <Link href="/" className="block" aria-label="PlanetPoints">
-                  <img src="./images/logo.png" width={60} height={60} alt="PlanetPoints Logo" />
+                  <img src="./images/Logo.png" width={60} height={60} alt="PlanetPoints Logo" />
                 </Link>
               </div>
               <div className="text-gray-400">Join us in our mission to make sustainable living effortless and accessible. With PlanetPoints, every choice you make helps our planet.</div>
