@@ -46,5 +46,5 @@ data class SubmitProduct(
 )
 
 data class StatusCode(
-    var statusCode: String,
+    var response: String,
 )

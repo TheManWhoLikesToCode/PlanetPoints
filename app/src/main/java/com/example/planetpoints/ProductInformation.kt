@@ -40,6 +40,7 @@ class ProductInformation : AppCompatActivity() {
                         val intent = Intent(this@ProductInformation, AddProduct::class.java)
                         intent.putExtra("code", code)
                         startActivity(intent)
+                        finish()
                     }
                 }
 
