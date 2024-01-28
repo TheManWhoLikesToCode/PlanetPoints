@@ -2,7 +2,7 @@
 
 
 
-<img src="https://github.com/TheManWhoLikesToCode/PlanetPoints/blob/product-page/Logo.png" alt="PlanetPoints Logo" height="100" width="100">
+<img src="https://github.com/TheManWhoLikesToCode/PlanetPoints/blob/main/frontend/public/images/Logo.png" alt="PlanetPoints Logo" height="100" width="100">
 
 
 ## **Summary**
