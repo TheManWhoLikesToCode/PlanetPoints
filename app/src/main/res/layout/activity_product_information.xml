@@ -29,9 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="end"
-            android:text="Chips"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            tools:text="Chips" />
+            android:text="loading..."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </LinearLayout>
 
     <LinearLayout
@@ -54,9 +53,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="end"
-            android:text="Jimmy Johns"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            tools:text="Jimmy Johns" />
+            android:text="loading..."
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
     </LinearLayout>
 
     <LinearLayout

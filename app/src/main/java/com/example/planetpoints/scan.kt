@@ -35,12 +35,12 @@ class scan : AppCompatActivity() {
             val intent = Intent(this, ProductInformation::class.java)
             intent.putExtra("code", it.text)
             startActivity(intent)
-            runOnUiThread {
+            /*runOnUiThread {
                 Toast.makeText(this, "Scan result: ${it.text}", Toast.LENGTH_LONG).show()
-            }
+            }*/
         }
         codeScanner.errorCallback = ErrorCallback { // or ErrorCallback.SUPPRESS
-            runOnUiThread {
+           runOnUiThread {
                 Toast.makeText(this, "Camera initialization error: ${it.message}",
                     Toast.LENGTH_LONG).show()
             }
