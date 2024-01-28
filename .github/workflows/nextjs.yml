@@ -26,23 +26,27 @@ jobs:
         with:
           node-version: "20"
           cache: 'npm'
-
-      - name: Change to frontend directory
-        run: cd frontend
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
-        run: npm ci
+        run: |
+          cd frontend
+          npm ci
 
       - name: Build with Next.js
-        run: npm run build
+        run: |
+          cd frontend
+          npm run build
 
       - name: Static HTML export with Next.js
-        run: npm run export
+        run: |
+          cd frontend
+          npm run export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./frontend/out
 
   deploy:
     environment:
