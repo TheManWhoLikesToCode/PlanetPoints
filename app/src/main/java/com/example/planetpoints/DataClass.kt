@@ -1,7 +1,7 @@
 package com.example.planetpoints
 
 data class Product(
-    var Item: Item,
+    var Item: Item?,
 )
 
 data class Item(

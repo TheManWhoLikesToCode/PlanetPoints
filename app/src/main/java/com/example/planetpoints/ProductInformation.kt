@@ -30,18 +30,23 @@ class ProductInformation : AppCompatActivity() {
             override fun onResponse(call: Call<Product?>, response: Response<Product?>) {
                 val body = response.body()
                 if (response.isSuccessful && body != null){
-                    productNameText.text = body.Item.name.S
-                    brandNameText.text = body.Item.brand.S
-                    Toast.makeText(this@ProductInformation, "Got the data for " + body.Item.name.S, Toast.LENGTH_SHORT).show()
+                    val item = body.Item
+                    if (item != null){
+                        productNameText.text = item.name.S
+                        brandNameText.text = item.brand.S
+                        Toast.makeText(this@ProductInformation, "Got the data for " + item.name.S, Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this@ProductInformation, "Product not found.", Toast.LENGTH_SHORT).show()
+                        val intent = Intent(this@ProductInformation, AddProduct::class.java)
+                        intent.putExtra("code", code)
+                        startActivity(intent)
+                    }
                 }
 
             }
 
             override fun onFailure(call: Call<Product?>, t: Throwable) {
-                Toast.makeText(this@ProductInformation, "Product not found.", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this@ProductInformation, AddProduct::class.java)
-                intent.putExtra("code", code)
-                startActivity(intent)
+                Toast.makeText(this@ProductInformation, "Error connecting to server...", Toast.LENGTH_SHORT).show()
             }
         })
     }
