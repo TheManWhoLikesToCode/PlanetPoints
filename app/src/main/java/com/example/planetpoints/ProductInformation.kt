@@ -19,6 +19,7 @@ class ProductInformation : AppCompatActivity() {
         val barCodeText = findViewById<TextView>(R.id.bar_code_text)
         val productNameText = findViewById<TextView>(R.id.product_name_text)
         val brandNameText = findViewById<TextView>(R.id.brand_name_text)
+        val pointsText = findViewById<TextView>(R.id.points_text)
 
         barCodeText.text = code
 
@@ -34,6 +35,7 @@ class ProductInformation : AppCompatActivity() {
                     if (item != null){
                         productNameText.text = item.name.S
                         brandNameText.text = item.brand.S
+                        pointsText.text = item.scoreModifier.N
                         Toast.makeText(this@ProductInformation, "Got the data for " + item.name.S, Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(this@ProductInformation, "Product not found.", Toast.LENGTH_SHORT).show()
