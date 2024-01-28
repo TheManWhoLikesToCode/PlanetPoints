@@ -10,7 +10,7 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             {/* Logo */}
             <Link href="/" className="block" aria-label="Cruip">
-              <img src="./images/logo.png" width={60} height={60} alt="Logo" />
+              <img src="./images/Logo.png" width={60} height={60} alt="Logo" />
             </Link>
           </div>
 
