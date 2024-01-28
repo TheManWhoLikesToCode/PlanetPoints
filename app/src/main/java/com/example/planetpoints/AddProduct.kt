@@ -25,23 +25,50 @@ class AddProduct : AppCompatActivity() {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerPackagingType.adapter = adapter
 
-        val code = intent.getStringExtra("code")!!
+        val code = intent.getStringExtra("code")!!.toLong().toString()
 
         val productName = findViewById<EditText>(R.id.editTextProductName)
         val brandName = findViewById<EditText>(R.id.editTextBrand)
         val addButton = findViewById<Button>(R.id.buttonAddProduct)
+        var ingredients: ArrayList<String> = arrayListOf(" ")
+        val productAPI = RetrofitHelper.getInstance().create(ProductAPI::class.java)
+
+        val productInfoCall: Call<Item2> = productAPI.getProductInfo(code)
+
+        productInfoCall.enqueue(object : Callback<Item2?> {
+            override fun onResponse(call: Call<Item2?>, response: Response<Item2?>) {
+                if (response.isSuccessful) {
+                    val body = response.body()
+                    if(body != null) {
+                        Toast.makeText(this@AddProduct, "Product info obtained", Toast.LENGTH_SHORT)
+                            .show()
+                        productName.setText( body.name, TextView.BufferType.EDITABLE)
+                        brandName.setText( body.brand, TextView.BufferType.EDITABLE)
+                        ingredients = body.ingredients
+                    } else {
+                        Toast.makeText(this@AddProduct, "No product info found" + response.raw().code(), Toast.LENGTH_SHORT).show()
+                    }
+                } else {
+                    Toast.makeText(this@AddProduct, "No product info found" + response.raw().code(), Toast.LENGTH_SHORT).show()
+
+                }
+            }
+
+            override fun onFailure(call: Call<Item2?>, t: Throwable) {
+                Toast.makeText(this@AddProduct, "Error connecting to server...", Toast.LENGTH_SHORT).show()
+            }
+        })
+
 
         addButton.setOnClickListener {
             // Create an Intent to launch the second activity
             val submitProduct = SubmitProduct(
                 barcode = code,
-                ingredients = arrayListOf(" "),
+                ingredients = ingredients,
                 name = productName.text.toString(),
                 brand = brandName.text.toString(),
                 packaging = arrayListOf(spinnerPackagingType.selectedItem.toString()),
             )
-
-            val productAPI = RetrofitHelper.getInstance().create(ProductAPI::class.java)
 
             val call: Call<StatusCode> = productAPI.addProduct(submitProduct)
 

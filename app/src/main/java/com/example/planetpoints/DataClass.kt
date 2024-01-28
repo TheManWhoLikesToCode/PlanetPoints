@@ -13,6 +13,12 @@ data class Item(
     var brand: brand,
 )
 
+data class Item2(
+    var brand: String,
+    var name: String,
+    var ingredients: ArrayList<String>,
+)
+
 data class barcode(
     var N: String,
 )

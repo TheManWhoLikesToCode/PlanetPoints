@@ -14,6 +14,9 @@ interface ProductAPI {
 
     @POST("/default/addProduct")
     fun addProduct(@Body product: SubmitProduct): Call<StatusCode>
+
+    @GET("/default/getProductInfo")
+    fun getProductInfo(@Query("barcode") barcode: String): Call<Item2>
 }
 
 object RetrofitHelper {

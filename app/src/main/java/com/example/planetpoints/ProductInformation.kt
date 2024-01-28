@@ -8,6 +8,7 @@ import android.widget.Toast
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.math.floor
 
 class ProductInformation : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +21,7 @@ class ProductInformation : AppCompatActivity() {
         val productNameText = findViewById<TextView>(R.id.product_name_text)
         val brandNameText = findViewById<TextView>(R.id.brand_name_text)
         val pointsText = findViewById<TextView>(R.id.points_text)
+
 
         barCodeText.text = code
 
@@ -35,7 +37,7 @@ class ProductInformation : AppCompatActivity() {
                     if (item != null){
                         productNameText.text = item.name.S
                         brandNameText.text = item.brand.S
-                        pointsText.text = item.scoreModifier.N
+                        pointsText.text = floor(item.scoreModifier!!.N.toDouble()).toString().split('.')[0]
                         Toast.makeText(this@ProductInformation, "Got the data for " + item.name.S, Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(this@ProductInformation, "Product not found.", Toast.LENGTH_SHORT).show()
