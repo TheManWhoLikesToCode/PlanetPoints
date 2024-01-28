@@ -45,12 +45,7 @@ jobs:
       - name: Build with Next.js
         run: |
           cd frontend
-          npm next build
-
-      - name: Static HTML export with Next.js
-        run: |
-          cd frontend
-          npm next export
+          npx --no-install next build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
