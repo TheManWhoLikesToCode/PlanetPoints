@@ -27,7 +27,7 @@ export default function MeetTheTeam() {
                   <Image className="rounded-full" src={TeamMemberImage01} width={48} height={48} alt="Team Member 01" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow"> - Spartahacks is an amazing experience! I learned a ton about new fremeworks and technologies along with my amazing team. We are the best no doubt!
+              <blockquote className="text-lg text-gray-400 grow">   — Spartahacks is an amazing experience! I learned a ton about new fremeworks and technologies along with my amazing team. We are the best no doubt!
                </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">David G.</cite> - <span className="text-purple-600">Backend Dev</span>
@@ -41,7 +41,7 @@ export default function MeetTheTeam() {
                   <Image className="rounded-full" src={TeamMemberImage02} width={48} height={48} alt="Team Member 02" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">  — Spartahacks was undoubtedly my most successful hackathon to date. A huge shoutout to my incredible team; I couldn't have came close without them.
+              <blockquote className="text-lg text-gray-400 grow">   — Spartahacks was undoubtedly my most successful hackathon to date. A huge shoutout to my incredible team; I couldn't have came close without them.
               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
                 <cite className="text-gray-200 not-italic">Jaydin F.</cite> - <span className="text-purple-600"> Frontend Dev</span>
@@ -55,9 +55,10 @@ export default function MeetTheTeam() {
                   <Image className="rounded-full" src={TeamMemberImage03} width={48} height={48} alt="Team Member 03" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— AMANDA TO DO</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">   — With Spartahacks being my first hackathon experience it was a blast! The team and I hacked hard and had good times. 
+              </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Alex Johnson</cite> - <span className="text-purple-600">Project Manager</span>
+                <cite className="text-gray-200 not-italic">Amanda K.</cite> - <span className="text-purple-600">Backend Dev</span>
               </div>
             </div>
 
@@ -68,9 +69,10 @@ export default function MeetTheTeam() {
                   <Image className="rounded-full" src={TeamMemberImage04} width={48} height={48} alt="Team Member 04" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— GRANT TODO</blockquote>
+              <blockquote className="text-lg text-gray-400 grow">   — This second time around for me here at Spartahacks was great. I love the product and love the team!
+               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">Emily Brown</cite> - <span className="text-purple-600">QA Engineer</span>
+                <cite className="text-gray-200 not-italic">Grant D.</cite> - <span className="text-purple-600">Mobile Dev</span>
               </div>
             </div>
 
