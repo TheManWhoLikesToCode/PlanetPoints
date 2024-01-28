@@ -27,9 +27,10 @@ export default function MeetTheTeam() {
                   <Image className="rounded-full" src={TeamMemberImage01} width={48} height={48} alt="Team Member 01" />
                 </div>
               </div>
-              <blockquote className="text-lg text-gray-400 grow">— DAVID TODO </blockquote>
+              <blockquote className="text-lg text-gray-400 grow"> - Spartahacks is an amazing experience! I learned a ton about new fremeworks and technologies along with my amazing team. We are the best no doubt!
+               </blockquote>
               <div className="text-gray-700 font-medium mt-6 pt-5 border-t border-gray-700">
-                <cite className="text-gray-200 not-italic">John Doe</cite> - <span className="text-purple-600">Development Lead</span>
+                <cite className="text-gray-200 not-italic">David G.</cite> - <span className="text-purple-600">Backend Dev</span>
               </div>
             </div>
 
