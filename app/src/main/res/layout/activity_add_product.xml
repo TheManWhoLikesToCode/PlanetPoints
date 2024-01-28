@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/textViewPackagingType"
         app:layout_constraintTop_toBottomOf="@id/textViewPackagingType" />
-
+    <!--
     <TextView
         android:id="@+id/textViewAddIngredients"
         android:layout_width="wrap_content"
@@ -91,7 +91,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
-
+    -->
+    
     <Button
         android:id="@+id/buttonAddProduct"
         android:layout_width="wrap_content"
