@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Home - Open PRO',
-  description: 'Page description',
+  title: 'PlanetPoints',
+  description: 'Make Every Scan Count for the Planet with PlanetPoints.',
 }
 
 import Hero from '@/components/hero'

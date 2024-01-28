@@ -12,7 +12,7 @@ export default function DefaultLayout({
   children,
 }: {
   children: React.ReactNode
-}) {  
+}) {
 
   useEffect(() => {
     AOS.init({
@@ -26,7 +26,12 @@ export default function DefaultLayout({
   return (
     <>
       <main className="grow">
-
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
         <PageIllustration />
 
         {children}
