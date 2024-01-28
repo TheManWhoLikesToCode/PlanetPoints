@@ -52,7 +52,7 @@ class AddProduct : AppCompatActivity() {
 
         val spinnerPackagingType = findViewById<Spinner>(R.id.spinnerPackagingType)
         val packagingOptions = arrayOf("Paper", "Plastic", "Metal", "Compostable", "Biodegradable")
-        val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, packagingOptions)
+        val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, packagingOptions)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinnerPackagingType.adapter = adapter
     }
