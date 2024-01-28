@@ -3,7 +3,7 @@ import json
 import os
 
 # Needs to be chaneged to input from Android App for Barcode Scanning
-barcode = "037578800817"
+barcode = "051000012517"
 
 def get_product_info(barcode):
     """
@@ -17,8 +17,8 @@ def get_product_info(barcode):
             If an exception occurs, returns a dictionary with status code 500.
     """
     #API Key
-    api_key = "gp62a05pa6zkxova52zgzejrmvk775"
-    #API URL for Barcode Product Info
+    api_key = "1px3s2oy6i0jmxyimb7ddbpyhiapmd"
+    #API URL for Barcode Product Info 
     api_url = f'https://api.barcodelookup.com/v2/products?barcode={barcode}&formatted=y&key={api_key}'
     try:
         response = requests.get(api_url)
@@ -29,6 +29,8 @@ def get_product_info(barcode):
             product_name = product_info['products'][0]['product_name']  
             product_brand = product_info['products'][0]['brand']
             product_indegredients = product_info['products'][0]['ingredients']
+
+            product_array = product_indegredients.split(",")
             
             return{ 
                 'Brands' : product_brand,
@@ -41,7 +43,10 @@ def get_product_info(barcode):
             'statuscode' : 500 
         }
          
-    return product_info, product_name, product_brand, product_indegredients,  
+    return product_info, product_name, product_brand, product_indegredients, 
+
+product_indegredients = get_product_info(barcode)
+
 
 
 def lambda_handler(event, context):

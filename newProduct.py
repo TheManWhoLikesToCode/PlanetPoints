@@ -4,13 +4,12 @@ from ingredient_parser import parse_ingredient
 import json
 
 # Set the path to your JSON key file
-json_key_path = './spartahack9-aa720278c9f3.json'
+json_key_path = '/Users/redap/Desktop/SpartaHacks/PlanetPoints/spartahack9-aa720278c9f3.json'
 
 # Set the GOOGLE_APPLICATION_CREDENTIALS environment variable
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = json_key_path
 
-image_name = "test.png"
-
+image_name = "final.png"
 
 bucket_name = "planetpoints"
 
@@ -99,7 +98,7 @@ def extract_ingredients(text):
     return filtered_ingredients_json
 
 filtered_ingredients_json = (extract_ingredients(concatenated_text))
-
+print(filtered_ingredients_json)
 
 #Delete after anaylsis
 def delete_image(bucket_name, image_name):
@@ -124,4 +123,4 @@ def delete_image(bucket_name, image_name):
     except Exception as e :
         print(f"The file {image_name} was not found in the bucket {bucket_name}.")
 
-delete_image(bucket_name, image_name)
+
