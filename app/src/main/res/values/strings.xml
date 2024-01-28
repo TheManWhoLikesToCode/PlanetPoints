@@ -3,4 +3,11 @@
     <string name="welcome">Welcome to Planet Points</string>
     <string name="scan_product_button">Scan Product</string>
     <string name="bar_code">Bar Code:</string>
+    <string name="product_price">Product Price</string>
+    <string name="packaging_type">Packaging Type</string>
+    <string name="product_name">Product Name</string>
+    <string name="add_product">Add Product</string>
+    <string name="brand">Brand</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="add_ingredients">Add Ingredients</string>
 </resources>

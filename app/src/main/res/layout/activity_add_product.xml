@@ -10,7 +10,7 @@
         android:id="@+id/textViewProductName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Name"
+        android:text="@string/product_name"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginStart="16dp"
@@ -20,30 +20,75 @@
         android:id="@+id/editTextProductName"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
+        android:layout_marginTop="8dp"
+        android:autofillHints="name"
         android:inputType="textPersonName"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProductName"
-        app:layout_constraintStart_toStartOf="@+id/textViewProductName"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
+        app:layout_constraintStart_toStartOf="@id/textViewProductName"
+        app:layout_constraintTop_toBottomOf="@id/textViewProductName"
+        android:hint="Example: Frosted Flakes"
+        />
 
     <TextView
-        android:id="@+id/textViewProductPrice"
+        android:id="@+id/textViewBrand"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Price"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProductName"
-        app:layout_constraintStart_toStartOf="@+id/editTextProductName"
+        android:text="@string/brand"
+        app:layout_constraintStart_toStartOf="@id/editTextProductName"
+        app:layout_constraintTop_toBottomOf="@id/editTextProductName"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/editTextProductPrice"
+        android:id="@+id/editTextBrand"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@+id/textViewProductPrice"
-        app:layout_constraintStart_toStartOf="@+id/textViewProductPrice"
+        android:layout_marginTop="8dp"
+        android:autofillHints="brand"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewBrand"
+        app:layout_constraintTop_toBottomOf="@id/textViewBrand"
+        android:hint="Example: Kellogg's"
+        />
+
+    <TextView
+        android:id="@+id/textViewPackagingType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/packaging_type"
+        app:layout_constraintStart_toStartOf="@id/editTextBrand"
+        app:layout_constraintTop_toBottomOf="@id/editTextBrand"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerPackagingType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewPackagingType"
+        app:layout_constraintTop_toBottomOf="@id/textViewPackagingType" />
+
+    <TextView
+        android:id="@+id/textViewAddIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_ingredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPackagingType" />
+
+    <Button
+        android:id="@+id/buttonTakePicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/take_picture"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddIngredients"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp"/>
 
@@ -51,9 +96,12 @@
         android:id="@+id/buttonAddProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Product"
-        app:layout_constraintTop_toBottomOf="@+id/editTextProductPrice"
+        android:layout_marginBottom="60dp"
+        android:text="@string/add_product"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
