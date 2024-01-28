@@ -38,14 +38,13 @@ jobs:
           static_site_generator: next
 
       - name: Install dependencies
+        working-directory: ./frontend
         run: |
-          cd frontend
           npm ci
 
       - name: Build with Next.js
         working-directory: ./frontend
         run: |
-          cd frontend
           npx --no-install next build
 
       - name: Upload artifact
