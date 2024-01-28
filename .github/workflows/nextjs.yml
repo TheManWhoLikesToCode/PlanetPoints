@@ -47,13 +47,10 @@ jobs:
         run: |
           npx --no-install next build
 
-      - name: List output directory contents
-        run: ls -al ./frontend
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./frontend
+          path: ./frontend/out
 
   deploy:
     environment:
