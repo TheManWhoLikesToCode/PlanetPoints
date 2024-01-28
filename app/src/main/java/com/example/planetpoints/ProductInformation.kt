@@ -1,5 +1,6 @@
 package com.example.planetpoints
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -38,7 +39,9 @@ class ProductInformation : AppCompatActivity() {
 
             override fun onFailure(call: Call<Product?>, t: Throwable) {
                 Toast.makeText(this@ProductInformation, "Product not found.", Toast.LENGTH_SHORT).show()
-
+                val intent = Intent(this@ProductInformation, AddProduct::class.java)
+                intent.putExtra("code", code)
+                startActivity(intent)
             }
         })
     }
