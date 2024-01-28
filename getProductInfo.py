@@ -16,12 +16,10 @@ def get_product_info(barcode):
         dict: A dictionary containing product information including brand, name, and ingredients.
             If an exception occurs, returns a dictionary with status code 500.
     """
-
     #API Key
     api_key = "gp62a05pa6zkxova52zgzejrmvk775"
     #API URL for Barcode Product Info
     api_url = f'https://api.barcodelookup.com/v2/products?barcode={barcode}&formatted=y&key={api_key}'
-
     try:
         response = requests.get(api_url)
 
