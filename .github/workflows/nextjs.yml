@@ -36,12 +36,12 @@ jobs:
       - name: Build with Next.js
         run: |
           cd frontend
-          npm run build
+          next build
 
       - name: Static HTML export with Next.js
         run: |
           cd frontend
-          npm run export
+          next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
