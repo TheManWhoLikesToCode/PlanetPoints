@@ -1,7 +1,0 @@
-{
-  "/(auth)/reset-password/page": "app/(auth)/reset-password/page.js",
-  "/(auth)/signin/page": "app/(auth)/signin/page.js",
-  "/(auth)/signup/page": "app/(auth)/signup/page.js",
-  "/(default)/page": "app/(default)/page.js",
-  "/api/hello/route": "app/api/hello/route.js"
-}
